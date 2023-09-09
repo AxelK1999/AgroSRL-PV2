@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+	
+   		<property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+   		<property name="connection.url">jdbc:postgresql://ec2-3-231-82-226.compute-1.amazonaws.com:5432/d4dbv75bf3og1c</property> <!-- URL (misma que la usada en connection JDBC) -->
+   		<property name="connection.username">tdaxpsnujqthcd</property> <!-- DB User -->
+   		<property name="connection.password">77b17f4bb2128d300dc17845d6d3bd00650d01c32344acf530852f2d1d2822e2</property> <!-- DB Password -->
+   		
+   		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
+		<property name="show_sql">true</property> <!-- Show SQL in console -->
+		
+		<mapping class = "Modelos.Campo"/>
+	    <mapping class = "Modelos.Lote"/>
+		<mapping class = "Modelos.Cultivo"/>
+		<mapping class = "Modelos.DetalleProyecto"/>
+		<mapping class = "Modelos.EstadoCampo"/>
+		<mapping class = "Modelos.Laboreo"/>
+		<mapping class = "Modelos.Proyecto"/>
+		<mapping class = "Modelos.SituacionAnormal"/>
+		<mapping class = "Modelos.Suelo"/>
+		
+	</session-factory>
+</hibernate-configuration>

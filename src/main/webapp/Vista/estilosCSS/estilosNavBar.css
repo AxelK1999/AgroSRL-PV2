@@ -1,0 +1,91 @@
+@charset "ISO-8859-1";
+* {
+	box-sizing: border-box;
+}
+
+.navBar{
+	overflow: hidden;
+	background-color:  #3A3D37;
+	font-family: Arial;
+}
+
+.navBar a{
+	float:left;
+	color: white;
+	font-size: 16px;
+	font-family: inherit;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.navBar-dropDown{
+	float: left; /*este elemento colocado hacia la derecha*/
+	overflow: hiden;
+}
+
+.navBar-dropDown-btn{
+  font-size: 16px;
+  border: none;  /*sin bordes del boton para que parezca un item mas*/
+  outline: none; /*sin ningun diseño de borde*/
+  color: white;
+  padding: 14px 16px;
+  background-color: #3A3D37;
+  font-family: inherit;
+  margin: 0; /*nada de distancia con los limites del contenedor*/
+}
+
+.navBar-dropDown-btn-itemsContent{
+	min-width:160px;
+	position:absolute;
+	background-color: #f9f9f9;
+	z-index:1; /*profundidad eje Z el y sus hijos(al menos digas lo contrario en hijos)*/ 
+	display: none;
+	box-shadow: 0px 8px 16px 0px rgba(255,255,255,0.2);
+}
+
+.navBar-dropDown-btn-itemsContent a{
+	float: none; /*ni a la derecha ni a la izquierda => uno debajo de otro*/
+	color: black;
+	font-size: 16px;
+	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+/*Efecto de colores(no olvider especificidad):*/
+.navBar a:hover , .navBar-dropDown:hover .navBar-dropDown-btn {
+	background-color: green;
+}
+.navBar-dropDown a:hover {
+  background-color: #ddd;
+}
+/*Fin efectos de cambio de color de fondo*/
+
+.navBar-dropDown:hover .navBar-dropDown-btn-itemsContent{
+	display: block;
+}
+
+			/*Responsive*/
+@media screen and (max-width: 800px) {
+	
+	.navBar a{
+		float:none;
+		display: block;
+	}
+	.navBar-dropDown{
+		float:none;
+		display: block;
+		text-align: center;
+	}
+	.navBar-dropDown-btn-itemsContent{
+		position: static;
+		text-align: center;
+	}
+	.navBar-dropDown-btn-itemsContent a{
+		text-align: center;
+	}
+	
+	/*------------------------ Section -------------------------*/
+}

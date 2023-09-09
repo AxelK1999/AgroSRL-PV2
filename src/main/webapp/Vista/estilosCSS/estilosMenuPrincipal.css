@@ -1,0 +1,84 @@
+@charset "ISO-8859-1";
+
+* {
+	
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXLRs9Jl0O_87A6nAitbtSYFPyXlOXbzMxaA&usqp=CAU");
+}
+
+			/*------------------------ Section -------------------------*/	
+					
+.section{
+	background-color: rgba(0,0,0,0.6);
+	padding-top:15%;
+	padding-bottom:15%;
+		
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 50px;
+	column-gap:150px;
+	align-content: center;
+	justify-content: center;
+	
+}	
+
+
+.section-estadisticas{
+	 background: linear-gradient(to left, rgba(0, 0, 0,0.9), rgba(0, 0, 0,0.01));
+	 
+	box-shadow : 0px 8px 16px 0px rgba(0,0,0,0.4);
+	width:  350px;
+	height: 200px;
+		
+	display: flex;
+	flex-direction: column;/*define predisposicion si en fila o columnas*/
+	align-items: center; /*alainea los elementos conetenidos en el*/
+	
+	
+	
+}
+
+.section-estadisticas span{
+	font-family: Helvetica;
+	font-size: 40px;
+	padding: 2px 20px;
+
+	background-color:rgba(46, 158, 53,0.3);
+	box-shadow : 0px 8px 16px 0px rgba(64, 219, 74,0.15);
+	border-radius: 5px;	
+}	
+
+.section-estadisticas p{
+	margin-top:15px;
+	font-family: Helvetica;
+	font-size: 30px;
+	font-weight: 20px;
+	color:rgba(253, 254, 254,0.6);
+}
+
+.footer{
+	
+	text-align:center;
+	background-color:  #3A3D37;
+	height:100%;
+	width:100%;
+	
+}
+
+.footer-content{
+	display: inline-block;
+	margin: 40px 40px;
+	padding: 20px 30px;
+	color: white;	
+}
+
+.footer-content li{
+	list-style-type:none;
+}
+		
+
+
+

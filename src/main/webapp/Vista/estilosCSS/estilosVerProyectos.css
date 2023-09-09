@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXLRs9Jl0O_87A6nAitbtSYFPyXlOXbzMxaA&usqp=CAU");
+}
+
+.section{
+	
+	background-color: rgba(0,0,0,0.5);
+	box-shadow : 0px 8px 16px 0px rgba(0,0,0,0.4);
+	
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	
+	margin: 100px auto;
+	width: 80%;
+		
+}
+
+.ContentResultConsultaProyect{
+	display: flex;
+	justify-content: center;
+}
+
+table{
+	margin-top: 30px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px; 
+ 
+}
+th {     
+	font-size: 13px;
+	font-weight: normal;     
+	padding: 8px;     
+    border-top: 2px solid #FFFFFF;    
+    
+    }
+    
+tr:hover{
+	background-color: rgba(210,251,222,0.3);
+}    

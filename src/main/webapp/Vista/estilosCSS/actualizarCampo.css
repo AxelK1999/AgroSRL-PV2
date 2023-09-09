@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXLRs9Jl0O_87A6nAitbtSYFPyXlOXbzMxaA&usqp=CAU");
+}
+.contentAct{
+
+	margin-top: 250px;
+	
+}
+form{
+	
+	background-color: rgba(0,0,0,0.5);
+	box-shadow : 0px 8px 16px 0px rgba(0,0,0,0.4);
+	width:  600px;
+	height: 400px;
+	margin: auto;
+
+}
+
+.input-Estado, .input-Direccion, .contentAct-btnsCargar{
+    padding-top: 30px;
+	text-align:center;
+	
+}
+
+.contentAct-btnsCargar {
+	padding-top: 80px;
+}
+
+.contentAct-btnsCargar a{
+	padding-right: 120px;
+}
+.titulo{
+	text-align:center;
+	padding-bottom: 40px;
+	padding-top: 0px;
+	
+}
+
+.titulo label{
+	font-size: 30px;
+	
+}
